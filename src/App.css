@@ -1,38 +1,57 @@
+body {
+	max-width: 600px;
+	min-width: 320px;
+	margin: 0 auto;
+}
 .App {
-  text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#meme {
+	margin: 20px 0;
+	width: 100%;
+	height: 500px;
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.line-1,
+.line-2 {
+	width: 100%;
+	color: #fff;
+	font-weight: 700;
+	text-shadow: 2px 2px black, -1px -1px #333;
+	font-size: 25px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.line-1 {
+	width: 100%;
+	height: 500px;
+	display: flex;
+	align-items: flex-start;
+	position: absolute;
+	margin-top: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.line-2 {
+	width: 100%;
+	height: 500px;
+	display: flex;
+	align-items: flex-end;
+	position: absolute;
+	padding-bottom: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.line-1 span {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.line-2 span {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
 }
